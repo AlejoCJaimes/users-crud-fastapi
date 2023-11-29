@@ -3,6 +3,7 @@ from typing import Optional
 
 class UserBase(BaseModel):
     fullname: str
+    username: str
     email: str
     password_hash: str
     is_authenticated: Optional[bool] = False
